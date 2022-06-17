@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* position: relative; */
+}
+
+nav {
+    /* border: 1px solid; */
+    padding: 10px;
+    text-align: center;
+    height: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+}
+
+.list ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding-top: 10px;
+}
+
+.list ul li a {
+    color: black;
+}
+
+.list ul li:hover {
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.container-profile {
+    /* border: 1px solid; */
+    margin: 40px 0;
+    padding: 40px;
+    height: 400px;
+    background-color: #FFF2F2;
+    /* animation: slide-in 1000ms; */
+}
+
+.main-left {
+    width: 300px;
+    /* border: 1px solid; */
+    padding: 20px;
+    text-align: justify;
+    animation: slide-left 2000ms;
+}
+
+.main-right {
+    width: 300px;
+    text-align: center;
+    /* border: 1px solid; */
+}
+
+.main-right img {
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    animation: slide-right 2000ms;
+}
+
+.container-hobby {
+    padding: 60px;
+    height: 400px;
+}
+
+.main-hobby {
+    /* border: 1px solid; */
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.hobby-left img {
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 30px;
+    animation: slide-left 2000ms;
+}
+
+.hobby-right {
+    text-align: justify;
+    /* border: 1px solid; */
+    padding: 20px;
+    width: 800px;
+    animation: slide-right 2000ms;
+}
+
+.container-about {
+    background-color: #FFF2F2;
+    height: 500px;
+    /* border: 1px solid; */
+}
+
+.main-about {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    /* border: 1px solid; */
+}
+
+.container-img {
+    /* border: 1px solid; */
+    text-align: center;
+    padding: 10vh 0;
+    height: 400px;
+}
+
+.container-img img {
+    border-radius: 10px;
+    animation: slide-in 2000ms;
+    margin-top:80px;
+}
+
+@keyframes slide-in {
+from {
+transform: translatey(-100%);
+}
+to {
+transform: translateX(0%);
+}
+}
+
+@keyframes slide-left {
+from {
+transform: translatex(-100%);
+}
+to {
+transform: translateX(0%);
+}
+}
+
+@keyframes slide-right {
+from {
+transform: translatex(+100%);
+}
+to {
+transform: translateX(0%);
+}
+}
