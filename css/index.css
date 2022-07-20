@@ -8,7 +8,7 @@
 }
 
 nav {
-    /* border: 5px solid; */
+    /* border: 1px solid; */
     padding: 10px;
     text-align: center;
     height: 10vh;
@@ -73,6 +73,7 @@ nav {
 .container-hobby {
     padding: 60px;
     height: 400px;
+    /* border: 1px solid red; */
 }
 
 .main-hobby {
@@ -113,11 +114,11 @@ nav {
     width: 50%;
     margin: auto;
     padding: 40px;
-    /* border: 1px solid; */
+    /* border: 1px solid blue; */
 }
 
 .container-img {
-    /* border: 1px solid; */
+    /* border: 1px solid red; */
     text-align: center;
     padding: 10vh 0;
     height: 400px;
@@ -180,4 +181,50 @@ transform: translatex(+100%);
 to {
 transform: translateX(0%);
 }
+}
+
+@media (max-width: 480px) {
+    nav {
+        height: 80px;
+    }
+    .container-img {
+        padding: 35px;
+        height: 200px;
+    }
+    .container-img img {
+        width: 200px;
+        height: 200px;
+    }
+    .container-profile {
+        margin: 60px auto;
+        height: 650px;
+    }
+    .container-profile img {
+        width: 280px;
+        height: 380px;
+    }
+    .main {
+        display: block;
+        padding: 0;
+    }
+    .container-hobby {
+        padding: 0;
+        overflow: scroll;
+        height: 600px;
+    }
+    .hobby-left img {
+        width: 400px;
+        height: 500px;
+    }
+    .hobby-right {
+        width: 300px;
+    }
+    .college {
+        padding: 0px;
+        height: 480px;
+    }
+    .main-about {
+        padding: 0;
+        width: 300px;
+    }
 }
